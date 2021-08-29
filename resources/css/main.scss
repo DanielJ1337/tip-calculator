@@ -1,0 +1,126 @@
+:root {
+  --veryDarkCyan: hsl(183, 100%, 15%);
+  --darkGrayishCyan: hsl(186, 14%, 43%);
+  --darkGrayishCyanFont: hsl(184, 14%, 56%);
+  --lightGrayishCyanInput: hsl(185, 41%, 84%);
+  --lightGrayishCyanReset: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-size: 62.5%;
+  background-color: var(--lightGrayishCyanInput);
+}
+
+.calculator {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 1rem;
+
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  width: 50vw;
+  height: 40vh;
+  background-color: var(--white);
+
+  &__tip-heading,
+  &__bill,
+  &__people-heading {
+    font-size: 0.5rem;
+    color: var(--darkGrayishCyanFont);
+    font-family: 'Space Mono', sans-serif;
+  }
+
+  &__left-container {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__right-container {
+    background-color: var(--veryDarkCyan);
+    flex: 0.5;
+    color: var(--white);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Space Mono', sans-serif;
+  }
+
+  &__tip-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    width: 80%;
+  }
+
+  &__output-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__output {
+    font-size: 1.4rem;
+  }
+
+  &__inner-wrapper {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+
+  &__reset {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    bottom: 5%;
+  }
+
+  &__amount {
+    background-color: var(--veryDarkCyan);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    display: grid;
+    place-content: center;
+    color: var(--white);
+    font-family: 'Space Mono', sans-serif;
+    width: 100%;
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 0.1rem;
+  }
+
+  &__amount.custom {
+    background-color: var(--lightGrayishCyanInput);
+    border: none;
+    box-sizing: border-box;
+  }
+
+  &__amount.custom:focus {
+    outline: none;
+  }
+
+  &__button-container {
+    margin: auto;
+    width: 100%;
+  }
+}

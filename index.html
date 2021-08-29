@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./resources/css/normalize.css" />
+    <link rel="stylesheet" href="./resources/css/main.css" />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="calculator">
+        <div class="calculator__left-container">
+          <div class="calculator__bill-wrapper">
+            <h3 class="calculator__bill">Bill</h3>
+            <div class="calculator__input-wrapper">
+              <input type="number" id="bill-amount" />
+            </div>
+          </div>
+          <div class="calculator__tip-wrapper">
+            <h3 class="calculator__tip-heading">Select Tip %</h3>
+            <div class="calculator__tip-container">
+              <div class="calculator__amount five">5%</div>
+              <div class="calculator__amount ten">10%</div>
+              <div class="calculator__amount fifteen">15%</div>
+              <div class="calculator__amount twentyfive">25%</div>
+              <div class="calculator__amount fifty">50%</div>
+              <input class="calculator__amount custom" placeholder="Custom" />
+            </div>
+          </div>
+          <div class="calculator__people-wrapper">
+            <h3 class="calculator__people-heading">Number of people</h3>
+            <div class="calculator__people-input-wrapper">
+              <input type="number" id="people-count" />
+            </div>
+          </div>
+        </div>
+        <div class="calculator__right-container">
+          <div class="calculator__output-wrapper">
+            <div class="calculator__inner-wrapper">
+              Tip Amount <br />
+              / person
+              <span class="calculator__output">0.00</span>
+            </div>
+            <div class="calculator__inner-wrapper">
+              Total <br />
+              / person
+              <span class="calculator__output">0.00</span>
+            </div>
+          </div>
+          <div class="calculator__button-container">
+            <button class="calculator__reset" type="submit">RESET</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
