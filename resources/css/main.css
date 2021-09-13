@@ -170,5 +170,25 @@ body {
 @media screen and (max-width: 375px) {
   .calculator {
     flex-direction: column;
+    width: 75vw;
+    height: 65vh;
+  }
+  .calculator__left-container {
+    flex: auto;
+  }
+  .calculator__right-container {
+    flex: auto;
+  }
+  .calculator__inner-wrapper {
+    font-size: 0.75rem;
+  }
+  .calculator__tip-heading, .calculator__bill, .calculator__people-heading {
+    font-size: 0.75rem;
+  }
+  .calculator__amount {
+    width: auto;
+  }
+  .calculator__person-output, .calculator__tip-output {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */

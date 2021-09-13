@@ -199,5 +199,34 @@ body {
 @media screen and (max-width: 375px) {
     .calculator {
         flex-direction: column;
+        width: 75vw;
+        height: 65vh;
+
+        &__left-container {
+            flex: auto;
+        }
+
+        &__right-container {
+            flex: auto;
+        }
+
+        &__inner-wrapper {
+            font-size: 0.75rem;
+        }
+
+        &__tip-heading,
+        &__bill,
+        &__people-heading {
+            font-size: 0.75rem;
+        }
+
+        &__amount {
+            width: auto;
+        }
+
+        &__person-output,
+        &__tip-output {
+            font-size: 1rem;
+        }
     }
 }
