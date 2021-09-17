@@ -179,6 +179,33 @@ body {
   .calculator__right-container {
     flex: auto;
   }
+  .calculator__input-wrapper {
+    position: relative;
+  }
+  .calculator__input-wrapper input {
+    text-align: right;
+    width: 90%;
+  }
+  .calculator__input-wrapper span {
+    position: absolute;
+    z-index: 1;
+    top: 0.6rem;
+    left: 0.55rem;
+  }
+  .calculator__people-input-wrapper {
+    position: relative;
+  }
+  .calculator__people-input-wrapper input {
+    width: 90%;
+    text-align: right;
+    margin-bottom: 1.5rem;
+  }
+  .calculator__people-input-wrapper span {
+    position: absolute;
+    z-index: 1;
+    top: 0.6rem;
+    left: 0.55rem;
+  }
   .calculator__inner-wrapper {
     font-size: 0.75rem;
   }
