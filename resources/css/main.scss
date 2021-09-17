@@ -76,12 +76,26 @@ body {
             text-align: right;
             width: 75%;
         }
+
+        span {
+            position: absolute;
+            z-index: 1;
+            top: 0.6rem;
+            left: 0.55rem;
+        }
     }
 
     &__people-input-wrapper {
         input {
             width: 75%;
             text-align: right;
+        }
+
+        span {
+            position: absolute;
+            z-index: 1;
+            top: 0.6rem;
+            left: 0.55rem;
         }
     }
 

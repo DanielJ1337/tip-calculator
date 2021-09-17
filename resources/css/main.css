@@ -66,9 +66,21 @@ body {
   text-align: right;
   width: 75%;
 }
+.calculator__input-wrapper span {
+  position: absolute;
+  z-index: 1;
+  top: 0.6rem;
+  left: 0.55rem;
+}
 .calculator__people-input-wrapper input {
   width: 75%;
   text-align: right;
+}
+.calculator__people-input-wrapper span {
+  position: absolute;
+  z-index: 1;
+  top: 0.6rem;
+  left: 0.55rem;
 }
 .calculator__left-container {
   flex: 0.5;
